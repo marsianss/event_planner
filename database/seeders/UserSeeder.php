@@ -28,6 +28,10 @@ class UserSeeder extends Seeder
             'role' => 'admin',
             'is_verified_organizer' => true,
             'last_active_at' => now(),
+            'profile_picture' => 'https://example.com/images/admin.jpg',
+            'x' => 'https://x.com/admin',
+            'linkedin' => 'https://linkedin.com/in/admin',
+            'instagram' => 'https://instagram.com/admin',
         ]);
 
         // Create organizer users
@@ -47,6 +51,10 @@ class UserSeeder extends Seeder
             'role' => 'organizer',
             'is_verified_organizer' => true,
             'last_active_at' => now(),
+            'profile_picture' => 'https://example.com/images/organizer.jpg',
+            'x' => 'https://x.com/eventpro',
+            'linkedin' => 'https://linkedin.com/in/eventpro',
+            'instagram' => 'https://instagram.com/eventpro',
         ]);
 
         // Create another organizer with different specialization
@@ -65,6 +73,10 @@ class UserSeeder extends Seeder
             'role' => 'organizer',
             'is_verified_organizer' => true,
             'last_active_at' => now(),
+            'profile_picture' => 'https://example.com/images/concertmaster.jpg',
+            'x' => 'https://x.com/concertmaster',
+            'linkedin' => 'https://linkedin.com/in/concertmaster',
+            'instagram' => 'https://instagram.com/concertmaster',
         ]);
 
         // Create regular users
