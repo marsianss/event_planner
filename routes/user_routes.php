@@ -1,4 +1,6 @@
 <?php
 use App\Http\Controllers\UserProfileController;
 
-Route::put('/user-profile', [UserProfileController::class, 'update'])->name('user-profile.update');
+Route::middleware('auth')->group(function () {
+    Route::post('/user-profile', [UserProfileController::class, 'update'])->name('user-profile.update');
+});
