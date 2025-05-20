@@ -20,3 +20,4 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/wassim.php';
 require __DIR__.'/auth.php';
+require __DIR__.'/user_routes.php';
